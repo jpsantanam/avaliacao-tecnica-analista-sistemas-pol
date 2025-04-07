@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"numero\": \"12345\" }"
+					"raw": "{\r\n    \"numero\": \"12345\"\r\n}"
 				},
 				"url": "http://localhost:8080/processos"
 			},
@@ -55,7 +55,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"numero\": \"67890\" }"
+					"raw": "{\r\n    \"numero\": \"67890\"\r\n}"
 				},
 				"url": "http://localhost:8080/processos/1"
 			},
@@ -82,14 +82,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"nome\": \"67890\" }",
+					"raw": "{\r\n    \"nome\": \"João Pedro\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8080/processos/16/reus"
+				"url": "http://localhost:8080/processos/1/reus"
 			},
 			"response": []
 		}
