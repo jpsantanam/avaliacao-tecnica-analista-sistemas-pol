@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "87b56fe1-106a-4a04-b3b3-b8d0405969e3",
+		"name": "Processo API - Avaliação POL",
+		"description": "Coleção de testes para a API de Processos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25953277"
+	},
+	"item": [
+		{
+			"name": "Criar Processo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"numero\": \"12345\" }"
+				},
+				"url": "http://localhost:8080/processos"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar todos os processos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/processos"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar processo por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/processos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar processo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"numero\": \"67890\" }"
+				},
+				"url": "http://localhost:8080/processos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar processo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/processos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar Réu ao processo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nome\": \"67890\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/processos/16/reus"
+			},
+			"response": []
+		}
+	]
+}
